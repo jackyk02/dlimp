@@ -49,4 +49,9 @@ Next_obs: [3] [4] (remove first two)
         lambda x: x[:-2], traj["lang"]
     )
 
+    del traj["obs"]
+    del traj["actions"]
+    del traj["obs"]
+    del traj["lang"]
+
     return traj_truncated
